@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 2rem 0rem 2rem 0rem;
+    font-family: 'Karla',
+        sans-serif;
+    background-color: #F5F7FB;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.first-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+    font-size: 3rem;
+    line-height: 37px;
+    font-weight: bold;
+    margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.title-para {
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.start-btn {
+    color: white;
+    background-color: #4D5B9E;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.quiz-page-container {
+    max-width: 600px;
+}
+
+.ques-ans-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-bottom: 0.794239px solid #DBDEF0
+}
+
+.question {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.option-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+
+}
+
+.options {
+    padding: 0.4rem 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.24px;
+    line-height: 12px;
+    background-color: #D6DBF5;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
