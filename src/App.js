@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 function App() {
   const [startQuiz, setStartQuiz] = useState(false);
-  const [QuizPage, setQuizPage] = useState(false);
+  // const [QuizPage, setQuizPage] = useState(false);
 
   function startFunc() {
     setStartQuiz(prevState => !prevState);

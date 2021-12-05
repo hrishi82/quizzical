@@ -86,7 +86,26 @@ body {
     font-weight: 500;
     font-size: 10.24px;
     line-height: 12px;
-    background-color: #D6DBF5;
+    border: 0.794239px solid #4D5B9E;
     border-radius: 8px;
     margin-bottom: 15px;
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-answer-btn {
+    margin-top: 15px;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-weight: 600;
+    font-size: 10.24px;
+    line-height: 12px;
+    text-align: center;
+    background: #4D5B9E;
+    color: white;
+    border-radius: 10px;
 }

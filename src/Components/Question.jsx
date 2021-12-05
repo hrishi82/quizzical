@@ -1,7 +1,12 @@
+import React from "react";
 import { nanoid } from "nanoid";
 
 export default function Question(props) {
   let idQues = nanoid();
+
+  // const styles = {
+  //   backgroundColor: props.selected ? "#59E391" : "white"
+  // };
 
   function answerShuffle() {
     let ind = Math.floor(Math.random() * 4);
@@ -10,19 +15,17 @@ export default function Question(props) {
     return ansArr;
   }
 
-  function checkAnswer(e) {
-    if (e.target.innerText === props.correct_answer) {
-      console.log("ok");
-    } else {
-      console.log("not ok");
-    }
-  }
-
   let answerArray = answerShuffle();
   let answerList = answerArray.map(el => {
     let idAns = nanoid();
     return (
-      <li className="options" key={idAns} onClick={checkAnswer}>
+      <li
+        className="options"
+        key={idAns}
+        id={idAns}
+        // style={styles}
+        onClick={e => props.getAnswerData(e, props.id)}
+      >
         {el}
       </li>
     );
