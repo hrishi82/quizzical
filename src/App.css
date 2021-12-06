@@ -55,7 +55,114 @@ body {
     max-width: 600px;
 }
 
-.ques-ans-container {
+.question-title {
+    margin: 0;
+    padding: .2rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.question-container {
+    padding: 1rem 0;
+    width: 100%;
+    border-bottom: 0.8px #DBDEF0 solid;
+}
+
+.answer-btn {
+    border: none;
+    cursor: pointer;
+    background: #F5F7FB;
+    color: #293264;
+    border: 1px solid #293264;
+    border-radius: 9px;
+    padding: .32rem 1.1rem .28rem;
+    font-size: .75rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.answer-btn:disabled {
+    opacity: 60%;
+}
+
+.answer-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.check-answer-btn {
+    margin-top: 0.33rem;
+    align-self: center;
+    border: none;
+    background: #4D5B9E;
+    color: #F5F7FB;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: .75rem 1.9rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.selected {
+    background: #D6DBF5;
+    border: 1px transparent solid;
+}
+
+.correct {
+    background: #94D7A2;
+    border: 1px transparent solid;
+}
+
+.correct:disabled {
+    opacity: 100%;
+}
+
+.incorrect {
+    background: #F8BCBC;
+    border: 1px transparent solid;
+}
+
+.warning {
+    color: red;
+    font-size: 0.65rem;
+    font-weight: bold;
+    text-align: center;
+    margin: -14.5px auto 1px;
+    padding: 0;
+}
+
+.reset-btn {
+    border: none;
+    background: #4D5B9E;
+    color: #F5F7FB;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: .75rem 1.9rem;
+    border-radius: 0.75rem;
+    margin: 0.815rem 1.5rem;
+    cursor: pointer;
+}
+
+.score-container {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+
+/* .ques-ans-container {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -108,4 +215,4 @@ body {
     background: #4D5B9E;
     color: white;
     border-radius: 10px;
-}
+} */
